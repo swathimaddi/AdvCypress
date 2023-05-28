@@ -10,12 +10,12 @@ describe('Topic01_Suite',() => {
       cy.get("#new-header > div > div:nth-child(1) > div > div > nav.left-side-menu.menu-level-1-child > ul").should("be.visible")
       cy.wait(3000)
      // cy.viewport(500,800) -- desktop
-     cy.viewport("iphone-x") //-- mobile
+    // cy.viewport("iphone-x") //-- mobile
       cy.wait(3000)
       cy.get("#new-header > div > div:nth-child(1) > div > div > nav.left-side-menu.menu-level-1-child > ul").should("not.be.visible")
       cy.wait(3000)
       cy.viewport(1000,660)
-      //cy.wait(3000)
+      cy.wait(3000)
       cy.get("#new-header > div > div:nth-child(1) > div > div > nav.left-side-menu.menu-level-1-child > ul").should("be.visible")
 
   })
